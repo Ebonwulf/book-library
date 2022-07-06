@@ -6,6 +6,10 @@ public class Book {
     private String number, title, author, genre, subgenre, publisher;
     private boolean isLoaned;
 
+    public Book() {
+        //no argument constructor required by jackson to parse the csv to json
+    }
+
     public Book(String number, String title, String author, String genre, String subgenre, String publisher) {
         this.number = number;
         this.title = title;
